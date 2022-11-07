@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Bookshelf</title>
+</head>
+<body>
+    <nav>
+        <header class="nav">
+            <div class="header">Lilly's Bookshelf</div>
+            <span class="buttons"> <!--this is the links to the other pages(buttons)-->
+                <div class="specific"><a href="index.html">Home</a><div>
+                <div class="specific"><a href="about.html">About</a><div>
+                <div class="specific"><a href="contact.html">Contact</a></div>
+            </span>
+        </header>
+        <section id="topItems">
+            <section class="search"> <!--this is the search bar-->
+                <input placeholder="Search">
+                <button class="searchBtn">Search</button>
+            </section>
+            <section class="sort"> <!--this is sort button-->
+                <label>Sort by</label>
+                <select class="sortBy">
+                    <option value="titleaz">Title A-Z</option>
+                    <option value="titleza">Title Z-A</option>
+                </select>
+            </section>
+            <section> <!--This is for the count of the fave books and update button-->
+                You have
+                <span class="favCount">0</span>
+                favorite books!
+                <button class="favUpdateBtn">Update</button>
+            </section>
+            <form class="addBook"> <!--this is for adding books-->
+                <h4>Add Your Book Here:</h4>
+                <input id="addTitle" type="text" placeholder="Enter Book Title">
+                <input id="addAuthor" type="text" placeholder="Enter Book Author">
+                <input id="addSubject" type="text" placeholder="Enter Book Subject">
+                <input id="addLanguage" type="text" placeholder="Enter Book Language">
+                <button id="submit">Add Book</button>
+            </form>
+        </section>
+    </nav>
+    <main id="app"> <!--this is the container of all the books-->
+        <ul class="books">
+            <ul class="seperate">
+            </ul>
+        </ul>
+    </main>
+    <script src="./bookData.js"></script>
+    <script src="./book.js"></script>
+    <script src="./bookShelf.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

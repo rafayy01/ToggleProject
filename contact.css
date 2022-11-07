@@ -1,0 +1,30 @@
+*{
+    margin: 6px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: cadetblue;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: underline;
+}
+
+.buttons{
+    font-size: 20px;
+}
+
+p{
+    margin: 2rem;
+    font-size: 20px;
+}
+
+.contact{
+    color: pink;
+    font-weight: bold;
+}
+.info{
+    font-size: 18px;
+    text-decoration: blah;
+}
